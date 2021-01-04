@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.microservise.client.client.controlers.flightFilterControler">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="285.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="capacity" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <TextField fx:id="capacityTF" />
+                        <ComboBox fx:id="capacityCB" prefHeight="15.0" prefWidth="15.0" visibleRowCount="5" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="price" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <TextField fx:id="priceTF" />
+                        <ComboBox fx:id="priceCB" prefHeight="15.0" prefWidth="15.0" visibleRowCount="5" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="distance" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <TextField fx:id="distanceTF" />
+                        <ComboBox fx:id="distCB" prefHeight="15.0" prefWidth="15.0" visibleRowCount="5" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="300.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="plane" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <TextField fx:id="planeTF" />
+                        <ComboBox fx:id="planeCB" prefHeight="15.0" prefWidth="15.0" visibleRowCount="5" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="origin" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <TextField fx:id="originTF" />
+                        <ComboBox fx:id="orgCB" prefHeight="15.0" prefWidth="15.0" visibleRowCount="5" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="destination" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <TextField fx:id="destinatiionTF" />
+                        <ComboBox fx:id="destCB" prefHeight="15.0" prefWidth="15.0" visibleRowCount="5" />
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="filterButton" mnemonicParsing="false" onAction="#filter" prefHeight="32.0" prefWidth="107.0" text="do Filter" />
+         </children>
+      </VBox>
+   </children>
+</VBox>
